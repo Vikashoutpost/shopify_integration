@@ -20,6 +20,9 @@ app_license = "mit"
 # 		"has_permission": "shopify_integration.api.permission.has_app_permission"
 # 	}
 # ]
+after_migrate = "shopify_integration.customization.sales_order.create_custom_fields"
+after_uninstall = "shopify_integration.customization.sales_order.delete_custom_fields"
+after_install = "shopify_integration.customization.sales_order.create_custom_fields"
 
 # Includes in <head>
 # ------------------
