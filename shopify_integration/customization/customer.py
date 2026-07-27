@@ -10,7 +10,7 @@ def create_custom_fields():
         "fieldtype": "Data",
         "label": "Shopify Shop",
         "insert_after": "loyalty_program_tier",
-        "read_only": 1,
+        "read_only": 0,
         "no_copy": 1,
     },
     {
@@ -18,7 +18,7 @@ def create_custom_fields():
         "fieldtype": "Data",
         "label": "Shopify Customer ID",
         "insert_after": "shopify_shop",
-        "read_only": 1,
+        "read_only": 0,
         "unique": 1,
         "no_copy": 1,
     },
@@ -27,7 +27,7 @@ def create_custom_fields():
         "fieldtype": "Data",
         "label": "Shopify Email",
         "insert_after": "shopify_customer_id",
-        "read_only": 1,
+        "read_only": 0,
         "no_copy": 1,
     },
         ]
